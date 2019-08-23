@@ -14,32 +14,26 @@ class HomeVM {
     private let repository: HomeRepository
     private let disposeBag = DisposeBag()
     
-    struct Output {
-        let error: Driver<Error?>
-        let content: Driver<[HomeModelOutput]>
-    }
-    
     init(repository: HomeRepository) {
         self.repository = repository
     }
     
-    func search(keyword: String) -> Output {
+    func search(keyword: String) -> Observable<[HomeModelOutput]> {
         let model = HomeModelInput(keyword: keyword)
-        let error = BehaviorRelay<Error?>(value: nil)
         let content = BehaviorRelay<[HomeModelOutput]>(value: [])
         
         self.repository.requestAPI(model: model)
             .subscribe { (event) in
                 switch event {
                 case .error(let err):
-                    error.accept(err)
+                    print(err)
+                    content.accept([])
                 case .success(let model):
                     content.accept(model)
                 }
             }
             .disposed(by: disposeBag)
         
-        return Output(error: error.asDriver().skip(1),
-                      content: content.asDriver().skip(1))
+        return content.asObservable()
     }
 }

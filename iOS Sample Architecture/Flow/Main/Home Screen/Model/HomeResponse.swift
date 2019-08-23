@@ -22,7 +22,7 @@ struct HomeRepositoryResponse: Codable {
     let id: Int
     let name: String
     let htmlUrl: String
-    let description: String
+    let description: String?
     let owner: HomeOwnerResponse
 }
 
