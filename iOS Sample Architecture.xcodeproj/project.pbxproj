@@ -3,16 +3,52 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		101E7037230FBE7600A297D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E7036230FBE7600A297D9 /* AppDelegate.swift */; };
-		101E7039230FBE7600A297D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E7038230FBE7600A297D9 /* ViewController.swift */; };
-		101E703C230FBE7600A297D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101E703A230FBE7600A297D9 /* Main.storyboard */; };
 		101E703E230FBE7900A297D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101E703D230FBE7900A297D9 /* Assets.xcassets */; };
 		101E7041230FBE7900A297D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101E703F230FBE7900A297D9 /* LaunchScreen.storyboard */; };
 		101E704C230FBE7900A297D9 /* iOS_Sample_ArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E704B230FBE7900A297D9 /* iOS_Sample_ArchitectureTests.swift */; };
+		101E7064230FCF9800A297D9 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E705C230FCF9800A297D9 /* BaseCoordinator.swift */; };
+		101E7065230FCF9800A297D9 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E705E230FCF9800A297D9 /* Presentable.swift */; };
+		101E7066230FCF9800A297D9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E705F230FCF9800A297D9 /* BaseView.swift */; };
+		101E7067230FCF9800A297D9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E7060230FCF9800A297D9 /* Coordinator.swift */; };
+		101E7068230FCF9800A297D9 /* RouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E7062230FCF9800A297D9 /* RouterImpl.swift */; };
+		101E7069230FCF9800A297D9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E7063230FCF9800A297D9 /* Router.swift */; };
+		107EF292230FD225006C1E0F /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF28E230FD225006C1E0F /* HTTPRequest.swift */; };
+		107EF293230FD225006C1E0F /* URLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF28F230FD225006C1E0F /* URLClient.swift */; };
+		107EF294230FD225006C1E0F /* HTTPClient+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF290230FD225006C1E0F /* HTTPClient+Rx.swift */; };
+		107EF295230FD225006C1E0F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF291230FD225006C1E0F /* HTTPMethod.swift */; };
+		107EF298230FD2E8006C1E0F /* SchedulerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF297230FD2E8006C1E0F /* SchedulerProvider.swift */; };
+		107EF29F230FD390006C1E0F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF29E230FD390006C1E0F /* HomeView.swift */; };
+		107EF2A2230FD3A9006C1E0F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2A0230FD3A9006C1E0F /* HomeVC.swift */; };
+		107EF2A3230FD3A9006C1E0F /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 107EF2A1230FD3A9006C1E0F /* HomeVC.xib */; };
+		107EF2A5230FD3B2006C1E0F /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2A4230FD3B2006C1E0F /* HomeVM.swift */; };
+		107EF2A7230FD3CA006C1E0F /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2A6230FD3CA006C1E0F /* HomeRepository.swift */; };
+		107EF2A9230FD3D0006C1E0F /* HomeRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2A8230FD3CF006C1E0F /* HomeRepositoryImpl.swift */; };
+		107EF2AB230FD3DA006C1E0F /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2AA230FD3DA006C1E0F /* HomeAPI.swift */; };
+		107EF2AD230FD3E2006C1E0F /* HomeAPIImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2AC230FD3E2006C1E0F /* HomeAPIImpl.swift */; };
+		107EF2AF230FD427006C1E0F /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2AE230FD427006C1E0F /* HomeModel.swift */; };
+		107EF2B1230FD42E006C1E0F /* HomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2B0230FD42E006C1E0F /* HomeResponse.swift */; };
+		107EF2B6230FD46A006C1E0F /* CoordinatorFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2B3230FD46A006C1E0F /* CoordinatorFactoryImpl.swift */; };
+		107EF2B7230FD46A006C1E0F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2B4230FD46A006C1E0F /* AppCoordinator.swift */; };
+		107EF2B8230FD46A006C1E0F /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2B5230FD46A006C1E0F /* CoordinatorFactory.swift */; };
+		107EF2BC230FD57D006C1E0F /* ModuleFactoryImpl+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2B9230FD57D006C1E0F /* ModuleFactoryImpl+Repository.swift */; };
+		107EF2BD230FD57D006C1E0F /* ModuleFactoryImpl+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2BA230FD57D006C1E0F /* ModuleFactoryImpl+Data.swift */; };
+		107EF2BE230FD57D006C1E0F /* ModuleFactoryImpl+VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2BB230FD57D006C1E0F /* ModuleFactoryImpl+VM.swift */; };
+		107EF2C2230FD584006C1E0F /* DataModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2BF230FD584006C1E0F /* DataModuleFactory.swift */; };
+		107EF2C3230FD584006C1E0F /* RepositoryModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2C0230FD584006C1E0F /* RepositoryModuleFactory.swift */; };
+		107EF2C4230FD584006C1E0F /* VMModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2C1230FD584006C1E0F /* VMModuleFactory.swift */; };
+		107EF2C9230FD970006C1E0F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2C8230FD970006C1E0F /* MainCoordinator.swift */; };
+		107EF2CB230FD97E006C1E0F /* MainCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2CA230FD97E006C1E0F /* MainCoordinatorOutput.swift */; };
+		107EF2CD230FD985006C1E0F /* MainModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2CC230FD985006C1E0F /* MainModuleFactory.swift */; };
+		107EF2CF230FD996006C1E0F /* ModuleFactoryImple+Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2CE230FD996006C1E0F /* ModuleFactoryImple+Main.swift */; };
+		107EF2D1230FDC74006C1E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 107EF2D0230FDC74006C1E0F /* Main.storyboard */; };
+		107EF2D7230FDEA0006C1E0F /* ErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF2D6230FDEA0006C1E0F /* ErrorHelper.swift */; };
+		7D13EB35A704A31BC674378A /* Pods_iOS_Sample_ArchitectureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D8468FA0F074B8B548FB4D /* Pods_iOS_Sample_ArchitectureTests.framework */; };
+		85301D99EC010A56C02CE141 /* Pods_iOS_Sample_Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52EA50578D77776EA5E6BDF /* Pods_iOS_Sample_Architecture.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +64,54 @@
 /* Begin PBXFileReference section */
 		101E7033230FBE7600A297D9 /* iOS Sample Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Sample Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		101E7036230FBE7600A297D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		101E7038230FBE7600A297D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		101E703B230FBE7600A297D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		101E703D230FBE7900A297D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		101E7040230FBE7900A297D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		101E7042230FBE7900A297D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		101E7047230FBE7900A297D9 /* iOS Sample ArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Sample ArchitectureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		101E704B230FBE7900A297D9 /* iOS_Sample_ArchitectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Sample_ArchitectureTests.swift; sourceTree = "<group>"; };
 		101E704D230FBE7900A297D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		101E705C230FCF9800A297D9 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		101E705E230FCF9800A297D9 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		101E705F230FCF9800A297D9 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		101E7060230FCF9800A297D9 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		101E7062230FCF9800A297D9 /* RouterImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterImpl.swift; sourceTree = "<group>"; };
+		101E7063230FCF9800A297D9 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		107EF28E230FD225006C1E0F /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		107EF28F230FD225006C1E0F /* URLClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLClient.swift; sourceTree = "<group>"; };
+		107EF290230FD225006C1E0F /* HTTPClient+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPClient+Rx.swift"; sourceTree = "<group>"; };
+		107EF291230FD225006C1E0F /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		107EF297230FD2E8006C1E0F /* SchedulerProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulerProvider.swift; sourceTree = "<group>"; };
+		107EF29E230FD390006C1E0F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		107EF2A0230FD3A9006C1E0F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		107EF2A1230FD3A9006C1E0F /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		107EF2A4230FD3B2006C1E0F /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		107EF2A6230FD3CA006C1E0F /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		107EF2A8230FD3CF006C1E0F /* HomeRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepositoryImpl.swift; sourceTree = "<group>"; };
+		107EF2AA230FD3DA006C1E0F /* HomeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPI.swift; sourceTree = "<group>"; };
+		107EF2AC230FD3E2006C1E0F /* HomeAPIImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPIImpl.swift; sourceTree = "<group>"; };
+		107EF2AE230FD427006C1E0F /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		107EF2B0230FD42E006C1E0F /* HomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponse.swift; sourceTree = "<group>"; };
+		107EF2B3230FD46A006C1E0F /* CoordinatorFactoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImpl.swift; sourceTree = "<group>"; };
+		107EF2B4230FD46A006C1E0F /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		107EF2B5230FD46A006C1E0F /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		107EF2B9230FD57D006C1E0F /* ModuleFactoryImpl+Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ModuleFactoryImpl+Repository.swift"; sourceTree = "<group>"; };
+		107EF2BA230FD57D006C1E0F /* ModuleFactoryImpl+Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ModuleFactoryImpl+Data.swift"; sourceTree = "<group>"; };
+		107EF2BB230FD57D006C1E0F /* ModuleFactoryImpl+VM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ModuleFactoryImpl+VM.swift"; sourceTree = "<group>"; };
+		107EF2BF230FD584006C1E0F /* DataModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModuleFactory.swift; sourceTree = "<group>"; };
+		107EF2C0230FD584006C1E0F /* RepositoryModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryModuleFactory.swift; sourceTree = "<group>"; };
+		107EF2C1230FD584006C1E0F /* VMModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMModuleFactory.swift; sourceTree = "<group>"; };
+		107EF2C8230FD970006C1E0F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		107EF2CA230FD97E006C1E0F /* MainCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorOutput.swift; sourceTree = "<group>"; };
+		107EF2CC230FD985006C1E0F /* MainModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleFactory.swift; sourceTree = "<group>"; };
+		107EF2CE230FD996006C1E0F /* ModuleFactoryImple+Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModuleFactoryImple+Main.swift"; sourceTree = "<group>"; };
+		107EF2D0230FDC74006C1E0F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		107EF2D6230FDEA0006C1E0F /* ErrorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHelper.swift; sourceTree = "<group>"; };
+		2DB1B4A1306177BF17B0A4C8 /* Pods-iOS Sample Architecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Sample Architecture.debug.xcconfig"; path = "Target Support Files/Pods-iOS Sample Architecture/Pods-iOS Sample Architecture.debug.xcconfig"; sourceTree = "<group>"; };
+		484F7DB7F2026E51A745340B /* Pods-iOS Sample Architecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Sample Architecture.release.xcconfig"; path = "Target Support Files/Pods-iOS Sample Architecture/Pods-iOS Sample Architecture.release.xcconfig"; sourceTree = "<group>"; };
+		7EA5E5EFC1AEE8D50B9C1D7D /* Pods-iOS Sample ArchitectureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Sample ArchitectureTests.debug.xcconfig"; path = "Target Support Files/Pods-iOS Sample ArchitectureTests/Pods-iOS Sample ArchitectureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D0D8468FA0F074B8B548FB4D /* Pods_iOS_Sample_ArchitectureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Sample_ArchitectureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52EA50578D77776EA5E6BDF /* Pods_iOS_Sample_Architecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Sample_Architecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F024A447C0B5DF64D12DA583 /* Pods-iOS Sample ArchitectureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Sample ArchitectureTests.release.xcconfig"; path = "Target Support Files/Pods-iOS Sample ArchitectureTests/Pods-iOS Sample ArchitectureTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85301D99EC010A56C02CE141 /* Pods_iOS_Sample_Architecture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D13EB35A704A31BC674378A /* Pods_iOS_Sample_ArchitectureTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +140,8 @@
 				101E7035230FBE7600A297D9 /* iOS Sample Architecture */,
 				101E704A230FBE7900A297D9 /* iOS Sample ArchitectureTests */,
 				101E7034230FBE7600A297D9 /* Products */,
+				684867A5D4F9FD86B66EC94B /* Pods */,
+				F9868D0F47C02E8737CC1BFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +157,10 @@
 		101E7035230FBE7600A297D9 /* iOS Sample Architecture */ = {
 			isa = PBXGroup;
 			children = (
-				101E7036230FBE7600A297D9 /* AppDelegate.swift */,
-				101E7038230FBE7600A297D9 /* ViewController.swift */,
-				101E703A230FBE7600A297D9 /* Main.storyboard */,
-				101E703D230FBE7900A297D9 /* Assets.xcassets */,
-				101E703F230FBE7900A297D9 /* LaunchScreen.storyboard */,
-				101E7042230FBE7900A297D9 /* Info.plist */,
+				101E7059230FBF1E00A297D9 /* Coordinator */,
+				101E7057230FBF0300A297D9 /* Flow */,
+				101E705A230FBF3400A297D9 /* Helpers */,
+				101E7058230FBF0A00A297D9 /* Resources */,
 			);
 			path = "iOS Sample Architecture";
 			sourceTree = "<group>";
@@ -96,6 +174,222 @@
 			path = "iOS Sample ArchitectureTests";
 			sourceTree = "<group>";
 		};
+		101E7057230FBF0300A297D9 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				101E706A230FD10F00A297D9 /* Main */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		101E7058230FBF0A00A297D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				101E703D230FBE7900A297D9 /* Assets.xcassets */,
+				101E703F230FBE7900A297D9 /* LaunchScreen.storyboard */,
+				101E7042230FBE7900A297D9 /* Info.plist */,
+				107EF2D0230FDC74006C1E0F /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		101E7059230FBF1E00A297D9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				101E7036230FBE7600A297D9 /* AppDelegate.swift */,
+				107EF2B4230FD46A006C1E0F /* AppCoordinator.swift */,
+				107EF2B5230FD46A006C1E0F /* CoordinatorFactory.swift */,
+				107EF2B3230FD46A006C1E0F /* CoordinatorFactoryImpl.swift */,
+				107EF2B2230FD43A006C1E0F /* Factory */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		101E705A230FBF3400A297D9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				107EF2D5230FDE93006C1E0F /* Error */,
+				101E705B230FCF9800A297D9 /* Coordinator */,
+				107EF28D230FD225006C1E0F /* HTTP Request */,
+				107EF296230FD2E8006C1E0F /* Rx */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		101E705B230FCF9800A297D9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				101E705C230FCF9800A297D9 /* BaseCoordinator.swift */,
+				101E705D230FCF9800A297D9 /* Base */,
+				101E7061230FCF9800A297D9 /* Router */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		101E705D230FCF9800A297D9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				101E705E230FCF9800A297D9 /* Presentable.swift */,
+				101E705F230FCF9800A297D9 /* BaseView.swift */,
+				101E7060230FCF9800A297D9 /* Coordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		101E7061230FCF9800A297D9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				101E7062230FCF9800A297D9 /* RouterImpl.swift */,
+				101E7063230FCF9800A297D9 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		101E706A230FD10F00A297D9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				107EF299230FD352006C1E0F /* Home Screen */,
+				107EF2C8230FD970006C1E0F /* MainCoordinator.swift */,
+				107EF2CA230FD97E006C1E0F /* MainCoordinatorOutput.swift */,
+				107EF2CC230FD985006C1E0F /* MainModuleFactory.swift */,
+				107EF2CE230FD996006C1E0F /* ModuleFactoryImple+Main.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		107EF28D230FD225006C1E0F /* HTTP Request */ = {
+			isa = PBXGroup;
+			children = (
+				107EF28E230FD225006C1E0F /* HTTPRequest.swift */,
+				107EF28F230FD225006C1E0F /* URLClient.swift */,
+				107EF290230FD225006C1E0F /* HTTPClient+Rx.swift */,
+				107EF291230FD225006C1E0F /* HTTPMethod.swift */,
+			);
+			path = "HTTP Request";
+			sourceTree = "<group>";
+		};
+		107EF296230FD2E8006C1E0F /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				107EF297230FD2E8006C1E0F /* SchedulerProvider.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		107EF299230FD352006C1E0F /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				107EF29D230FD37D006C1E0F /* Model */,
+				107EF29C230FD363006C1E0F /* Data Handler */,
+				107EF29B230FD35D006C1E0F /* Use Case */,
+				107EF29A230FD359006C1E0F /* View */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
+		107EF29A230FD359006C1E0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				107EF29E230FD390006C1E0F /* HomeView.swift */,
+				107EF2A0230FD3A9006C1E0F /* HomeVC.swift */,
+				107EF2A1230FD3A9006C1E0F /* HomeVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		107EF29B230FD35D006C1E0F /* Use Case */ = {
+			isa = PBXGroup;
+			children = (
+				107EF2A4230FD3B2006C1E0F /* HomeVM.swift */,
+			);
+			path = "Use Case";
+			sourceTree = "<group>";
+		};
+		107EF29C230FD363006C1E0F /* Data Handler */ = {
+			isa = PBXGroup;
+			children = (
+				107EF2AA230FD3DA006C1E0F /* HomeAPI.swift */,
+				107EF2AC230FD3E2006C1E0F /* HomeAPIImpl.swift */,
+				107EF2A6230FD3CA006C1E0F /* HomeRepository.swift */,
+				107EF2A8230FD3CF006C1E0F /* HomeRepositoryImpl.swift */,
+			);
+			path = "Data Handler";
+			sourceTree = "<group>";
+		};
+		107EF29D230FD37D006C1E0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				107EF2AE230FD427006C1E0F /* HomeModel.swift */,
+				107EF2B0230FD42E006C1E0F /* HomeResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		107EF2B2230FD43A006C1E0F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				107EF2C5230FD5D4006C1E0F /* Data Source */,
+				107EF2C7230FD5E9006C1E0F /* Data Handler */,
+				107EF2C6230FD5DE006C1E0F /* Use Case */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		107EF2C5230FD5D4006C1E0F /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				107EF2BF230FD584006C1E0F /* DataModuleFactory.swift */,
+				107EF2BA230FD57D006C1E0F /* ModuleFactoryImpl+Data.swift */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		107EF2C6230FD5DE006C1E0F /* Use Case */ = {
+			isa = PBXGroup;
+			children = (
+				107EF2C1230FD584006C1E0F /* VMModuleFactory.swift */,
+				107EF2BB230FD57D006C1E0F /* ModuleFactoryImpl+VM.swift */,
+			);
+			path = "Use Case";
+			sourceTree = "<group>";
+		};
+		107EF2C7230FD5E9006C1E0F /* Data Handler */ = {
+			isa = PBXGroup;
+			children = (
+				107EF2C0230FD584006C1E0F /* RepositoryModuleFactory.swift */,
+				107EF2B9230FD57D006C1E0F /* ModuleFactoryImpl+Repository.swift */,
+			);
+			path = "Data Handler";
+			sourceTree = "<group>";
+		};
+		107EF2D5230FDE93006C1E0F /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				107EF2D6230FDEA0006C1E0F /* ErrorHelper.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		684867A5D4F9FD86B66EC94B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DB1B4A1306177BF17B0A4C8 /* Pods-iOS Sample Architecture.debug.xcconfig */,
+				484F7DB7F2026E51A745340B /* Pods-iOS Sample Architecture.release.xcconfig */,
+				7EA5E5EFC1AEE8D50B9C1D7D /* Pods-iOS Sample ArchitectureTests.debug.xcconfig */,
+				F024A447C0B5DF64D12DA583 /* Pods-iOS Sample ArchitectureTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F9868D0F47C02E8737CC1BFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D52EA50578D77776EA5E6BDF /* Pods_iOS_Sample_Architecture.framework */,
+				D0D8468FA0F074B8B548FB4D /* Pods_iOS_Sample_ArchitectureTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +397,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 101E7050230FBE7900A297D9 /* Build configuration list for PBXNativeTarget "iOS Sample Architecture" */;
 			buildPhases = (
+				4C38A4E12EB34188EC5C39D8 /* [CP] Check Pods Manifest.lock */,
 				101E702F230FBE7600A297D9 /* Sources */,
 				101E7030230FBE7600A297D9 /* Frameworks */,
 				101E7031230FBE7600A297D9 /* Resources */,
+				D15E305141882E880454C950 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +416,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 101E7053230FBE7900A297D9 /* Build configuration list for PBXNativeTarget "iOS Sample ArchitectureTests" */;
 			buildPhases = (
+				D1689825F4CA25C8F705AF0C /* [CP] Check Pods Manifest.lock */,
 				101E7043230FBE7900A297D9 /* Sources */,
 				101E7044230FBE7900A297D9 /* Frameworks */,
 				101E7045230FBE7900A297D9 /* Resources */,
@@ -178,8 +475,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				101E7041230FBE7900A297D9 /* LaunchScreen.storyboard in Resources */,
+				107EF2A3230FD3A9006C1E0F /* HomeVC.xib in Resources */,
 				101E703E230FBE7900A297D9 /* Assets.xcassets in Resources */,
-				101E703C230FBE7600A297D9 /* Main.storyboard in Resources */,
+				107EF2D1230FDC74006C1E0F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,12 +490,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C38A4E12EB34188EC5C39D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS Sample Architecture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D15E305141882E880454C950 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS Sample Architecture/Pods-iOS Sample Architecture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS Sample Architecture/Pods-iOS Sample Architecture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS Sample Architecture/Pods-iOS Sample Architecture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1689825F4CA25C8F705AF0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS Sample ArchitectureTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		101E702F230FBE7600A297D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				101E7039230FBE7600A297D9 /* ViewController.swift in Sources */,
+				107EF294230FD225006C1E0F /* HTTPClient+Rx.swift in Sources */,
+				107EF2A9230FD3D0006C1E0F /* HomeRepositoryImpl.swift in Sources */,
+				107EF2BC230FD57D006C1E0F /* ModuleFactoryImpl+Repository.swift in Sources */,
+				107EF2A2230FD3A9006C1E0F /* HomeVC.swift in Sources */,
+				101E7069230FCF9800A297D9 /* Router.swift in Sources */,
+				107EF2CF230FD996006C1E0F /* ModuleFactoryImple+Main.swift in Sources */,
+				107EF29F230FD390006C1E0F /* HomeView.swift in Sources */,
+				107EF2C3230FD584006C1E0F /* RepositoryModuleFactory.swift in Sources */,
+				101E7068230FCF9800A297D9 /* RouterImpl.swift in Sources */,
+				107EF2B7230FD46A006C1E0F /* AppCoordinator.swift in Sources */,
+				107EF2C4230FD584006C1E0F /* VMModuleFactory.swift in Sources */,
+				107EF295230FD225006C1E0F /* HTTPMethod.swift in Sources */,
+				107EF2A5230FD3B2006C1E0F /* HomeVM.swift in Sources */,
+				107EF2C2230FD584006C1E0F /* DataModuleFactory.swift in Sources */,
+				107EF2BD230FD57D006C1E0F /* ModuleFactoryImpl+Data.swift in Sources */,
+				107EF2AF230FD427006C1E0F /* HomeModel.swift in Sources */,
+				107EF2B6230FD46A006C1E0F /* CoordinatorFactoryImpl.swift in Sources */,
+				107EF2CB230FD97E006C1E0F /* MainCoordinatorOutput.swift in Sources */,
+				107EF298230FD2E8006C1E0F /* SchedulerProvider.swift in Sources */,
+				107EF2CD230FD985006C1E0F /* MainModuleFactory.swift in Sources */,
+				107EF2A7230FD3CA006C1E0F /* HomeRepository.swift in Sources */,
+				107EF293230FD225006C1E0F /* URLClient.swift in Sources */,
+				107EF2AD230FD3E2006C1E0F /* HomeAPIImpl.swift in Sources */,
+				107EF2C9230FD970006C1E0F /* MainCoordinator.swift in Sources */,
+				107EF2BE230FD57D006C1E0F /* ModuleFactoryImpl+VM.swift in Sources */,
+				107EF2B8230FD46A006C1E0F /* CoordinatorFactory.swift in Sources */,
+				101E7065230FCF9800A297D9 /* Presentable.swift in Sources */,
+				101E7067230FCF9800A297D9 /* Coordinator.swift in Sources */,
+				107EF2AB230FD3DA006C1E0F /* HomeAPI.swift in Sources */,
+				101E7066230FCF9800A297D9 /* BaseView.swift in Sources */,
+				107EF292230FD225006C1E0F /* HTTPRequest.swift in Sources */,
+				101E7064230FCF9800A297D9 /* BaseCoordinator.swift in Sources */,
+				107EF2D7230FDEA0006C1E0F /* ErrorHelper.swift in Sources */,
+				107EF2B1230FD42E006C1E0F /* HomeResponse.swift in Sources */,
 				101E7037230FBE7600A297D9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +616,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		101E703A230FBE7600A297D9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				101E703B230FBE7600A297D9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		101E703F230FBE7900A297D9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -358,11 +745,12 @@
 		};
 		101E7051230FBE7900A297D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB1B4A1306177BF17B0A4C8 /* Pods-iOS Sample Architecture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HP35UHCGA;
-				INFOPLIST_FILE = "iOS Sample Architecture/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/iOS Sample Architecture/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,11 +764,12 @@
 		};
 		101E7052230FBE7900A297D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 484F7DB7F2026E51A745340B /* Pods-iOS Sample Architecture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HP35UHCGA;
-				INFOPLIST_FILE = "iOS Sample Architecture/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/iOS Sample Architecture/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,6 +783,7 @@
 		};
 		101E7054230FBE7900A297D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EA5E5EFC1AEE8D50B9C1D7D /* Pods-iOS Sample ArchitectureTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +805,7 @@
 		};
 		101E7055230FBE7900A297D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F024A447C0B5DF64D12DA583 /* Pods-iOS Sample ArchitectureTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
