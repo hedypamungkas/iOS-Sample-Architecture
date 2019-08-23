@@ -16,12 +16,14 @@ class HomeVC: UIViewController, HomeView {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
+    lazy private var loadingView: UIActivityIndicatorView = UIActivityIndicatorView()
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSearchBar()
         setupCellWhenTapped()
+        setupLoading()
     }
     
     private func setupSearchBar() {
@@ -41,6 +43,18 @@ class HomeVC: UIViewController, HomeView {
             .bind(to: tableView.rx.items) { ( tableView: UITableView, index: Int, element: HomeModelOutput) in
                 return self.setupTableView(dataSource: element)
             }
+            .disposed(by: disposeBag)
+    }
+    
+    private func setupLoading() {
+        self.loadingView.center = self.view.center
+        self.loadingView.hidesWhenStopped = true
+        self.loadingView.style = .gray
+        self.view.addSubview(self.loadingView)
+        
+        self.viewModel
+            .isLoadingShown
+            .drive(self.loadingView.rx.isShown)
             .disposed(by: disposeBag)
     }
     
@@ -64,4 +78,18 @@ class HomeVC: UIViewController, HomeView {
         return result
     }
 
+}
+
+extension Reactive where Base: UIActivityIndicatorView {
+    var isShown: Binder<Bool> {
+        return Binder(self.base) { view, shown in
+            if shown {
+                view.startAnimating()
+                UIApplication.shared.beginIgnoringInteractionEvents()
+            } else {
+                view.stopAnimating()
+                UIApplication.shared.endIgnoringInteractionEvents()
+            }
+        }
+    }
 }

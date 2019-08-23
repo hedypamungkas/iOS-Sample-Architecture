@@ -12,6 +12,11 @@ import RxCocoa
 class HomeVM {
     
     private let repository: HomeRepository
+    private let loadingState = BehaviorRelay<Bool>(value: false)
+    var isLoadingShown: Driver<Bool> {
+        return self.loadingState.asDriver().skip(1)
+    }
+    
     private let disposeBag = DisposeBag()
     
     init(repository: HomeRepository) {
@@ -22,8 +27,10 @@ class HomeVM {
         let model = HomeModelInput(keyword: keyword)
         let content = BehaviorRelay<[HomeModelOutput]>(value: [])
         
+        self.loadingState.accept(true)
         self.repository.requestAPI(model: model)
             .subscribe { (event) in
+                self.loadingState.accept(false)
                 switch event {
                 case .error(let err):
                     print(err)
