@@ -15,5 +15,7 @@ struct HomeModelInput {
 struct HomeModelOutput {
     let repositoryName: String
     let repositoryImageUrl: URL
+    let repositoryUrl: URL
+    let repositoryDescription: String
     let authorName: String
 }

@@ -44,8 +44,10 @@ class HomeRepositoryImpl: HomeRepository {
     
     private func outputTransformModel(from object: HomeResponse) -> [HomeModelOutput] {
         let model = object.items.map { (response) -> HomeModelOutput in
-            return HomeModelOutput(repositoryName: response.name,
-                                   repositoryImageUrl: URL(string: response.owner.avatarUrl)! ,
+            return HomeModelOutput(repositoryName: response.fullName,
+                                   repositoryImageUrl: URL(string: response.owner.avatarUrl)!,
+                                   repositoryUrl: URL(string: response.htmlUrl)!,
+                                   repositoryDescription: response.description ?? "",
                                    authorName: response.owner.login)
         }
         return model
